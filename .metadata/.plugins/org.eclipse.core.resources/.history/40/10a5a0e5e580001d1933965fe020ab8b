@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package Thread;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class A {
+
+	public void show() {
+		for(int i=0;i<=5;i++) {
+			System.out.println("Welcome to Ust");
+		}
+	}
+}

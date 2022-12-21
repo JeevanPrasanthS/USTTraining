@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package Ticketing;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class TicketMain {
+
+	/**
+	 * @param args
+	 */
+	
+	List<Ticket> price=new TicketDao().getTicketDetails();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		//Map<Integer, List<Double>> amount=price.stream().collect(Collectors.groupingBy(Ticket::getKms,Collectors.mapping(Ticket::getAmount, Collectors.toList())));
+		
+		Map<Ticket, Double> m=new HashMap<>();
+		for (Map.Entry<Ticket, Double> entry : m.entrySet()) {
+			Ticket key = entry.getKey();
+			Double val = entry.getValue();
+			
+			Double a=key.setAmount((double) (key.getKms()*5));
+			key.settId(key.gettId());
+			key.setName(key.getName());
+			key.setSource(key.getSource());
+			key.setDestination(key.getDestination());
+			key.setKms(key.getKms());
+			
+			System.out.println(key+"  == "+val);
+		}
+		
+	}
+
+}

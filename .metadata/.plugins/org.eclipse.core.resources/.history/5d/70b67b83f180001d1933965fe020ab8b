@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package Ticketing;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class TicketMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Ticket> price=new TicketDao().getTicketDetails();
+		
+		
+		
+	}
+
+}

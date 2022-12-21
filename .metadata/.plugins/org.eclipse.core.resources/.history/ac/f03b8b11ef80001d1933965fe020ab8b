@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package Ticketing;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class TicketMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
