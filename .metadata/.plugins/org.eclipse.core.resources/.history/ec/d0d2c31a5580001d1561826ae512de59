@@ -1,0 +1,21 @@
+package Optional;
+
+import java.util.Optional;
+import java.util.stream.Stream;
+
+import Employee.Model;
+
+public class HandleOptional {
+
+	
+	  public static void main(String[] args)  throws Exception{
+	        Model m=new Model();
+	        Optional<Model> optionalString=Optional.ofNullable(m);
+	        System.out.println(optionalString.isPresent());
+	        optionalString.ifPresent(value->{
+	            System.out.println(value);
+	        });
+
+	    }
+	}
+

@@ -1,0 +1,39 @@
+package ArrayList;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
+
+public class Count {
+
+	public static void main(String[] args) {
+		//HashMap<String, Integer> map=new HashMap<>();
+		//map.put(" I am Jeevan and I am working with UST " ,102);
+	//	System.out.println(map.size());
+	
+		 String phrase = "I am Jeevan and I am Working with UST";
+
+	        HashMap<String, Integer> map = new HashMap<String, Integer>();
+	        String[] ignored = phrase.split(" ");
+
+	        //CAN BE FIX THIS POINT ON.
+	        for (String ignore : ignored) 
+	        {
+	            Integer count = map.get(ignore);
+	            if (count == null) 
+	            {
+	                count = 0;
+	            }
+	            map.put(ignore, count + 1);
+	        }
+
+	        for (int i = 0; i< ignored.length; i++)
+	        {
+	            System.out.println(ignored[i]);
+	        }
+	        System.out.println(map);
+	    }
+	
+	}
+	
+
