@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package Department;
+
+import java.util.List;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> emp=new EmployeeDao().getDetails();
+		emp.stream().distinct();
+		System.out.println(emp);
+		
+		for (Employee s : emp) {
+		//	System.out.println(s);
+		//	System.out.println("<==========================>");
+			
+			
+		}
+		
+		
+
+	}
+
+}

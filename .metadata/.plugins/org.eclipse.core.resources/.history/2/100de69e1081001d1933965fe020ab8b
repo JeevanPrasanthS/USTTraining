@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package Department;
+
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * @author ustjavafsdb411
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> emp=new EmployeeDao().getDetails();
+		emp.sort(Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName));
+		
+		System.out.println(emp);
+		
+	
+		
+		
+
+	}
+
+}
