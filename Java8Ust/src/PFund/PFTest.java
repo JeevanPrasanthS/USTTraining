@@ -24,7 +24,7 @@ public class PFTest {
 		
 		for(PrFund pr:p) {
 			if(pr.getSalary()<25000){
-			p.stream().filter(n->n.getSalary()).allMatch)
+		//	p.stream().filter(n->n.getSalary()).
 			}
 		}
 

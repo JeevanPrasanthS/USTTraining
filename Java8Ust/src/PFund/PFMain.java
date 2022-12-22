@@ -22,7 +22,7 @@ public class PFMain {
 		List<PrFund> pf=new PfDao().getDetails();
 		Map<PrFund, Double> map=new HashMap<>();
 		for(PrFund p:pf) {
-			if(p.getSalary()<25000) {
+			if(p.getSalary()>0 && p.getSalary()<25000) {
 				p.setPfDeduct(p.getSalary()*(0.05));
 				p.setSalary(p.getSalary()-p.getPfDeduct());
 			}else if(p.getSalary()>=25000 && p.getSalary()<50000) {
