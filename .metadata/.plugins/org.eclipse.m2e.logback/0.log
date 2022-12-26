@@ -1027,3 +1027,4 @@
 2022-12-22 14:50:52,513 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-22 14:50:52,514 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ustjavafsdb411\eclipse-workspace\sampleProject\src\main\resources
 2022-12-22 14:50:52,516 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-22 14:50:52,516 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ustjavafsdb411\eclipse-workspace\sampleProject\src\test\resources
